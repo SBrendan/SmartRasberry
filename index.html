@@ -2,6 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="3600">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="assets/css/semantic.min.css">
@@ -31,25 +32,12 @@
                     location: "Rennes, FR",
                     country: "",
                     forecast: 5,
-                    apikey: "d5eaac726d6d35dbca31fbe87cb58257",
+                    //  apikey: "c28d3767fc2c54313f3f17efd55c83f8",
                     api: "openweathermap",
                     displayCityNameOnly: false,
                     render: true,
                     view: "full"
                 });
-
-                var intervalID = window.setInterval(function () {
-                    example.flatWeatherPlugin('fetchWeather').then(success, error);
-                }, 30 * 60 * 1000); //call every sixty minutes
-
-                //then handle the success and fail states of the fetchWeather promise
-                function success(data) {
-                    example.flatWeatherPlugin('render', data);
-                }
-
-                function error(data) {
-                    example.flatWeatherPlugin('error', data);
-                }
             });
         }
     </script>
@@ -60,7 +48,7 @@
     </script>
 </head>
 
-<body onload="startPage(); setInterval('startPage()', 1000 )">
+<body onload="startPage(); setInterval('startPage()', 1000 * 60 * 1 )">
     <div class="ui two column grid container">
         <div class="column">
             <a href="radio.html">
