@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+.clock-day:before {
+  content: var(--timer-day);
+}
+.clock-hours:before {
+  content: var(--timer-hours);
+}
+.clock-minutes:before {
+  content: var(--timer-minutes);
+}
+.clock-seconds:before {
+  content: var(--timer-seconds);
+}
+
+body {
+    font-family: 'Montserrat', 'sans-serif';
+    align-items: center;
+    justify-content: center;
+}
+
+.time-container {
+    display: flex;
+}
+
+.clock-timer  {
+    font-family: 'Monteserrat', 'sans-serif';
+    font-size: 2em;
+    margin-bottom: 0px;
+    margin-right: 5px;
+}
+
+.clock-timer-days {
+    font-family: 'Monteserrat', 'sans-serif';
+    font-size: 2em;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+}

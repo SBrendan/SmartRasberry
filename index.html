@@ -1,33 +1,78 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="assets/css/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/flatWeatherPlugin.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="assets//js/semantic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/fr.js"></script>
     <script src="assets/js/clock.js"></script>
+    <script src="assets/js/jquery.flatWeatherPlugin.js"></script>
     <title>Rasberry Project</title>
     <style>
-        html, body {
-            width: 320;
-            height: 480;
+        html,
+        body {
+            width: 800;
+            height: 400;
         }
     </style>
     <link rel="stylesheet" type="text/css" href="assets/css/clock.css">
+    <script type="text/javascript">
+        function startWeather() {
+            $(document).ready(function () {
+
+                //Setup the plugin, see readme for more examples
+                var example = $("#weather").flatWeatherPlugin({
+                    location: "Rennes, FR",
+                    country: "",
+                    forecast: 5,
+                    apikey: "d5eaac726d6d35dbca31fbe87cb58257",
+                    api: "openweathermap",
+                    displayCityNameOnly: false,
+                    render: true,
+                    view: "full"
+                });
+
+                var intervalID = window.setInterval(function () {
+                    example.flatWeatherPlugin('fetchWeather').then(success, error);
+                }, 30 * 60 * 1000); //call every sixty minutes
+
+                //then handle the success and fail states of the fetchWeather promise
+                function success(data) {
+                    example.flatWeatherPlugin('render', data);
+                }
+
+                function error(data) {
+                    example.flatWeatherPlugin('error', data);
+                }
+            });
+        }
+    </script>
+    <script>
+        function startPage() {
+            startWeather();
+        }
+    </script>
 </head>
-<body>
+
+<body onload="startPage(); setInterval('startPage()', 1000 )">
     <div class="ui two column grid container">
         <div class="column">
-            <div class="ui segment">
-                <img src="assets/img/icon/radio.png" class="ui image">
-            </div>
+            <a href="radio.html">
+                <div class="ui blue inverted segment">
+                    <img src="assets/img/icon/radio.png" class="ui image">
+                </div>
+            </a>
         </div>
         <div class="column">
-            <div class="ui segment">
-                <img src="https://semantic-ui.com/images/avatar2/large/kristy.png" class="ui fluid image">
+            <div class="ui red inverted segment">
+                <div style="position:absolute; margin-top:0px;" id="weather">
+                </div>
             </div>
         </div>
         <div class="column">
@@ -36,39 +81,41 @@
             </div>
         </div>
         <div class="column">
-            <div class="ui segment">
+            <div class="ui black inverted segment">
                 <div class="clock-container">
-                    <div class="clock-col">
-                        <p class="clock-day clock-timer">
-                        </p>
-                        <p class="clock-label">
-                            Jours
-                        </p>
+                    <div class="time-container">
+                        <div class="clock-col">
+                            <p class="clock-hours clock-timer">
+                            </p>
+                            <p class="clock-label">
+                                Heures
+                            </p>
+                        </div>
+                        <div class="clock-col">
+                            <p class="clock-minutes clock-timer">
+                            </p>
+                            <p class="clock-label">
+                                Minutes
+                            </p>
+                        </div>
+                        <div class="clock-col">
+                            <p class="clock-seconds clock-timer">
+                            </p>
+                            <p class="clock-label">
+                                Secondes
+                            </p>
+                        </div>
                     </div>
-                    <div class="clock-col">
-                        <p class="clock-hours clock-timer">
-                        </p>
-                        <p class="clock-label">
-                            Heure
-                        </p>
-                    </div>
-                    <div class="clock-col">
-                        <p class="clock-minutes clock-timer">
-                        </p>
-                        <p class="clock-label">
-                            Minutes
-                        </p>
-                    </div>
-                    <div class="clock-col">
-                        <p class="clock-seconds clock-timer">
-                        </p>
-                        <p class="clock-label">
-                            Secondes
-                        </p>
+                    <div>
+                        <div class="clock-col day">
+                            <h3 style="text-align: center">Date du jour :</h3>
+                            <p class="clock-day clock-timer-days">
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 </body>
+
 </html>

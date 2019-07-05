@@ -1,3 +1,17 @@
 [
-    {"titre": "France Musique", "src": "http://direct.francemusique.fr/live/francemusique-midfi.mp3", "logo": "https://static.radio.fr/images/broadcasts/07/f7/3366/c300.png"}
+    {"titre": "France Musique", "src": "http://direct.francemusique.fr/live/francemusique-midfi.mp3", "logo": "https://static.radio.fr/images/broadcasts/07/f7/3366/c300.png"},
+    {"titre": "Skyrock", "src": " http://www.skyrock.fm/stream.php/tunein16_128mp3.mp3", "logo": "http://db.radioline.fr/pictures/radio_f386ec15811fab1ebefb3289620ba9b9/logo200.jpg?size=200"},
+    {"titre": " Europe 1", "src": "http://mp3lg4.tdf-cdn.com/9240/lag_180945.mp3", "logo": "http://db.radioline.fr/pictures/radio_fa64fea9b6ccd92e058ced3fa41f58f5/logo200.jpg?size=200"},
+    {"titre": "RFM", "src": "http://rfm-live-mp3-128.scdn.arkena.com/rfm.mp3", "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/1/19/RFM_logo_2011.png/220px-RFM_logo_2011.png"},
+    {"titre": "Virgin Radio", "src": "http://vr-live-mp3-128.scdn.arkena.com/virginradio.mp3", "logo": "https://www.lalettre.pro/photo/art/grande/9835403-15900830.jpg?v=1468337476"},
+    {"titre": "BFM Business", "src": "http://chai5she.cdn.dvmr.fr/bfmbusiness", "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/f/fb/BFM_Business_logo_2016.svg/1024px-BFM_Business_logo_2016.svg.png"},
+    {"titre": "NRJ France", "src": "   http://cdn.nrjaudio.fm/audio1/fr/30001/mp3_128.mp3?origine=fluxradios", "logo": "https://www.nrj.fr/build/img/logo-nrj.d217288b.svg"},
+    {"titre": "Fun Radio France", "src": "http://streaming.radio.funradio.fr/fun-1-48-192", "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6JewmjjjiVazFpAw5gMi51ptPtTrA2rbhtQoNc_P9wMyqVa9b"},
+    {"titre": "Rire & Chansons", "src": "http://cdn.nrjaudio.fm/audio1/fr/30401/mp3_128.mp3?origine=fluxradios", "logo": "https://www.rireetchansons.fr/build/img/logo-rireetchansons-flat.0695c747.svg"},
+    {"titre": "Mouv", "src": "http://direct.mouv.fr/live/mouv-midfi.mp3", "logo": "https://upload.wikimedia.org/wikipedia/fr/5/5d/Mouv.svg"},
+    {"titre": "RTL 2", "src": "http://streaming.radio.rtl2.fr/rtl2-1-48-192", "logo": "https://upload.wikimedia.org/wikipedia/fr/f/fa/RTL2_logo_2015.svg"},
+    {"titre": "RTL", "src": "http://streaming.radio.rtl.fr/rtl-1-48-192", "logo": "https://upload.wikimedia.org/wikipedia/commons/5/51/RTL_logo.svg"},
+    {"titre": "Radio Nova", "src": "http://novazz.ice.infomaniak.ch/novazz-128.mp3", "logo": "https://upload.wikimedia.org/wikipedia/commons/5/52/Nova_radio.png"},
+    {"titre": "Nostalgie", "src": "http://cdn.nrjaudio.fm/audio1/fr/30601/mp3_128.mp3?origine=fluxradios", "logo": "https://upload.wikimedia.org/wikipedia/fr/0/0b/Nostalgie_logo_2015.png"},
+    {"titre": "FIP", "src": "http://direct.fipradio.fr/live/fip-midfi.mp3", "logo": "https://upload.wikimedia.org/wikipedia/fr/d/d5/FIP_logo_2005.svg"}
 ]
