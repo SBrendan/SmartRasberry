@@ -22,7 +22,7 @@
 			};
 
 		var apiurls = {
-			"openweathermap" : ["http://api.openweathermap.org/data/2.5/weather", "http://api.openweathermap.org/data/2.5/forecast"],
+			"openweathermap" : ["https://api.openweathermap.org/data/2.5/weather", "https://api.openweathermap.org/data/2.5/forecast"],
 			"yahoo" : ["https://query.yahooapis.com/v1/public/yql"]
 		};
 
