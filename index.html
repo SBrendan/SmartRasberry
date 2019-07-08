@@ -12,14 +12,15 @@
     <script src="assets//js/semantic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/fr.js"></script>
-    <script src="assets/js/clock.js"></script>
+   <script src="assets/js/clock.js"></script>
     <script src="assets/js/jquery.flatWeatherPlugin.js"></script>
     <title>Rasberry Project</title>
     <style>
         html,
         body {
-            width: 800;
-            height: 400;
+            max-width: 800px;
+            max-height: 480px;
+            height: 100%;
         }
     </style>
     <link rel="stylesheet" type="text/css" href="assets/css/clock.css">
@@ -29,14 +30,14 @@
 
                 //Setup the plugin, see readme for more examples
                 var example = $("#weather").flatWeatherPlugin({
-                    location: "Rennes, FR",
+                    location: "Cesson-Sévigné, FR",
                     country: "",
-                    forecast: 5,
+                    forecast: 3,
                     apikey: "c28d3767fc2c54313f3f17efd55c83f8",
                     api: "openweathermap",
-                    displayCityNameOnly: false,
+                    displayCityNameOnly: true,
                     render: true,
-                    view: "full"
+                    view: "partial"
                 });
             });
         }
@@ -49,15 +50,15 @@
 </head>
 
 <body onload="startPage(); setInterval('startPage()', 1000 * 60 * 1 )">
-    <div class="ui two column grid container">
+    <div class="ui two column grid">
         <div class="column">
-            <a href="radio.html">
-                <div class="ui blue inverted segment">
-                    <img src="assets/img/icon/radio.png" class="ui image">
-                </div>
-            </a>
+            <div class="ui blue inverted segment" >
+                <a href="page/radio.html" >
+                    <img src="assets/img/icon/radio.png" class="ui small centered image"/>
+                </a>
+            </div>
         </div>
-        <div class="column">
+        <div class="column"> 
             <div class="ui red inverted segment">
                 <div style="position:absolute; margin-top:0px;" id="weather">
                 </div>
@@ -65,13 +66,15 @@
         </div>
         <div class="column">
             <div class="ui segment">
-                <img src="assets/img/icon/spotify.png" class="ui fluid image">
+                <a href="page/amzMusic.html">
+                    <img src="assets/img/icon/amz.png" class="ui small centered image"/>
+                </a>
             </div>
         </div>
         <div class="column">
             <div class="ui black inverted segment">
                 <div class="clock-container">
-                    <div class="time-container">
+                    <div class="time-container" style="text-align: center">
                         <div class="clock-col">
                             <p class="clock-hours clock-timer">
                             </p>
@@ -96,7 +99,7 @@
                     </div>
                     <div>
                         <div class="clock-col day">
-                            <h3 style="text-align: center">Date du jour :</h3>
+                            <h3 style="text-align: center; margin-bottom: 0px">Date du jour :</h3>
                             <p class="clock-day clock-timer-days">
                             </p>
                         </div>

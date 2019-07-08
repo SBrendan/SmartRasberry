@@ -1,0 +1,70 @@
+[
+    [
+        [
+            {
+                "base": "stations",
+                "clouds": {
+                    "all": 0
+                },
+                "cod": 200,
+                "coord": {
+                    "lat": 48.12,
+                    "lon": -1.6
+                },
+                "dt": 1562596550,
+                "id": 6618272,
+                "main": {
+                    "humidity": 32,
+                    "pressure": 1017,
+                    "temp": 26.06,
+                    "temp_max": 27.78,
+                    "temp_min": 24
+                },
+                "name": "Cesson-Sévigné",
+                "sys": {
+                    "country": "FR",
+                    "id": 6565,
+                    "message": 0.0072,
+                    "sunrise": 1562559300,
+                    "sunset": 1562616445,
+                    "type": 1
+                },
+                "timezone": 7200,
+                "visibility": 10000,
+                "weather": [
+                    {
+                        "description": "clear sky",
+                        "icon": "01d",
+                        "id": 800,
+                        "main": "Clear"
+                    }
+                ],
+                "wind": {
+                    "deg": 20,
+                    "speed": 3.6
+                }
+            }
+        ],
+        [
+            "success"
+        ]
+    ],
+    [
+        {
+            "city": {
+                "coord": {
+                    "lat": 48.1198,
+                    "lon": -1.6039
+                },
+                "country": "FR",
+                "id": 6618272,
+                "name": "Cesson-Sévigné",
+                "population": 15261,
+                "timezone": 7200
+            }
+        }
+    ],
+    [
+        "success"
+    ]
+]
