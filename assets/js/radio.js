@@ -1,7 +1,7 @@
 $(document).ready(function () {
     console.log("ready!");
     updateTimeWithInfo();
-    $.getJSON("./assets/config/listRadio.json", function (data) {
+    $.getJSON("../assets/config/listRadio.json", function (data) {
         var items = [];
         $.each(data, function (key, val) {
             items.push(` <div class='three wide column'>
