@@ -7,7 +7,7 @@ $(document).ready(function () {
         console.log('toito');
         diff = countDownDate.diff(moment());
         if (diff <= 0) {
-            clearInterval(x);
+            clearInterval(interval);
             // If the count down is finished, write some text 
             var audio = new Audio('../assets/song/alarm.mp3');
             audio.play();
