@@ -1,8 +1,8 @@
 $(document).ready(function () {
     console.log("ready!");
     updateTimeWithInfo();
-    var countDownDate;
-    var interval;
+    var countDownDate = null;
+    var interval = null;
     var startTimer = function () {
         console.log('toito');
         diff = countDownDate.diff(moment());
