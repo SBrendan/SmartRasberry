@@ -62,29 +62,40 @@
             Minuteur
         </h4>
         <div id="timerBox">
-            <h1 class="ui center aligned header" id="timer">00:00:00</h1>
+            <h1 style="font-size: 10em" class="ui center aligned header" id="timer">00:00:00</h1>
         </div>
         <br>
         <div class="three ui buttons">
-            <button onClick='setTimer(5)' class="ui green button">5 min</button>
-            <button onClick='setTimer(10)' class="ui teal button">10 min</button>
-            <button onClick='setTimer(15)' class="ui blue button">15 min</button>
+            <button onClick='setTimer(5)' class="ui green button huge">5 min</button>
+            <button onClick='setTimer(10)' class="ui teal button huge">10 min</button>
+            <button onClick='setTimer(15)' class="ui blue button huge">15 min</button>
         </div>
         <br>
         <br>
         <div class="ui buttons fluid">
-            <button id="start" class="ui compact labeled icon button green">
+            <button id="start" class="ui compact labeled icon button green huge">
                 <i class="play icon"></i>
                 Commencer
             </button>
             <div class="or" data-text="ou"></div>
-            <button id="stop" class="ui compact right labeled icon button red">
+            <button id="stop" class="ui compact right labeled icon button red huge">
                 <i class="stop icon"></i>
                 Stop
             </button>
         </div>
     </div>
-
+    <div class="ui basic modal">
+        <div class="ui icon header">
+            <i class="smile outline icon"></i>
+            Oublie pas le son
+        </div>
+        <div class="actions">
+            <div class="ui green ok inverted button">
+                <i class="checkmark icon"></i>
+                Oui il est activé
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

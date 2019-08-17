@@ -19,6 +19,7 @@ $(document).ready(function () {
     };
 
     $("#start").click(function () {
+        $('.ui.modal').modal('show');
         var timer = $("#timer").html();
         var time = timer.split(':');
         countDownDate = moment().add(time[1], 'minutes');
