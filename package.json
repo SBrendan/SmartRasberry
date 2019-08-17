@@ -1,0 +1,22 @@
+{
+  "name": "smartrasberry",
+  "version": "1.0.0",
+  "description": "Demo Available [here](https://sbrendan.github.io/SmartRasberry/index.html) It's just a simple web app for Rasberry to listen webRadio or Spotify and know weather and time",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SBrendan/SmartRasberry.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SBrendan/SmartRasberry/issues"
+  },
+  "homepage": "https://github.com/SBrendan/SmartRasberry#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
